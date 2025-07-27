@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matchbook Kid | From Trap House to Tech Stack - AI Changed Everything</title>
+    <meta name="description" content="From broke and homeless ex-con to making bands with AI. Matchbook Kid reveals the exact tools that transformed his life: Superhuman AI & System.io">
+    <meta name="keywords" content="AI success story, make money with AI, superhuman AI, system.io, affiliate marketing, trap to tech, matchbook kid">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@400;700;900&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #000000;
+            min-height: 100vh;
+            font-family: 'Courier Prime', monospace;
+            color: #ffffff;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Sleek gradient background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255,0,128,0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(0,255,0,0.1) 0%, transparent 50%),
+                #000000;
+            z-index: -3;
+        }
+
+        /* Subtle grid overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 100px 100px;
+            z-index: -2;
+        }
+
+        /* Clean particles */
+        .particles {
+            display: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Sleek header */
+        .header {
+            text-align: center;
+            padding: 60px 0 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ff0080, transparent);
+            animation: glow-line 3s ease-in-out infinite;
+        }
+
+        @keyframes glow-line {
+            0%, 100% { width: 100px; opacity: 0.5; }
+            50% { width: 200px; opacity: 1; }
+        }
+        
+        .logo {
+            font-family: 'Creepster', cursive;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            color: #ff0080;
+            margin-bottom: 10px;
+            text-shadow: 0 0 30px rgba(255,0,128,0.5);
+            letter-spacing: 2px;
+        }
+        
+        .tagline {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(0.9rem, 3vw, 1.4rem);
+            color: #00ff00;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+        
+        .subtitle {
+            color: #ffffff;
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            font-weight: 300;
+            opacity: 0.7;
+        }
+        
+        /* Clean hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 80px;
+            padding: 60px 40px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ff0080, transparent);
+            animation: scan 4s linear infinite;
+        }
+
+        @keyframes scan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .hero h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            margin-bottom: 30px;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .hero-story {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.8);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .highlight {
+            color: #ff0080;
+            font-weight: bold;
+        }
+        
+        .success-highlight {
+            color: #00ff00;
+            font-weight: bold;
+        }
+        
+        /* Clean transformation section */
+        .transformation {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+        
+        @media (max-width: 768px) {
+            .transformation {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+        
+        .before, .after {
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .before {
+            border-left: 3px solid #ff0080;
+        }
+        
+        .after {
+            border-left: 3px solid #00ff00;
+        }
+        
+        .transformation h2 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .transformation-text {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            line-height: 1.8;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .transformation-text p {
+            margin-bottom: 10px;
+        }
+
+        .transformation-text strong {
+            color: #ffffff;
+            display: block;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        
+        /* Sleek tools section */
+        .tools-section {
+            margin-bottom: 80px;
+        }
+        
+        .section-title {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 60px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 2px;
+            background: #ff0080;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .tool-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #ff0080, #00ff00);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        .tool-card:hover::before {
+            transform: translateX(0);
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(255,0,128,0.2);
+        }
+        
+        .tool-card h3 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(1.3rem, 3vw, 1.8rem);
+            margin-bottom: 20px;
+            color: #ff0080;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .tool-description {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .tool-description strong {
+            color: #00ff00;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #ff0080;
+            color: #000000;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Orbitron', monospace;
+            font-weight: bold;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            border: 2px solid #ff0080;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:hover {
+            background: transparent;
+            color: #ff0080;
+            box-shadow: 0 0 20px rgba(255,0,128,0.5);
+        }
+        
+        /* Clean social proof */
+        .social-proof {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 60px 40px;
+            margin-bottom: 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .social-proof::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 60px;
+            color: #ff0080;
+            opacity: 0.2;
+        }
+        
+        .social-proof h2 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            margin-bottom: 30px;
+            color: #00ff00;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .proof-text {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            line-height: 1.8;
+            color: rgba(255,255,255,0.8);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Sleek footer CTA */
+        .footer-cta {
+            background: linear-gradient(135deg, rgba(255,0,128,0.1), rgba(0,255,0,0.1));
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 60px 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .footer-cta h2 {
+            font-family: 'Creepster', cursive;
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            margin-bottom: 20px;
+            color: #ff0080;
+            text-shadow: 0 0 30px rgba(255,0,128,0.3);
+        }
+        
+        .footer-cta p {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            margin-bottom: 40px;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .footer-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-buttons .cta-button {
+            flex: 1 1 200px;
+        }
+        
+        @media (max-width: 768px) {
+            .footer-buttons {
+                flex-direction: column;
+            }
+            
+            .footer-buttons .cta-button {
+                width: 100%;
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero {
+                padding: 40px 20px;
+            }
+            
+            .tool-card {
+                padding: 30px 20px;
+            }
+        }
+        
+        /* SEO Schema Markup Styling */
+        .hidden-seo {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">MATCHBOOK KID</h1>
+            <p class="tagline">The Lab Chemist</p>
+            <p class="subtitle">From Trap House to Tech Stack</p>
+        </header>
+        
+                <section class="hero">
+            <h1>I Went From <span class="highlight">Broke Ex-Con</span> to Making <span class="success-highlight">Bands With AI</span></h1>
+            <div class="hero-story">
+                <p>Real talk - I grew up cooking in trap house labs from 13 to 20. Did my time. Got out with nothing but the clothes on my back and a phone with cracked screen.</p>
+                <p>But I had something else... <strong class="success-highlight">hunger</strong> and the right tools to change everything.</p>
+                <p>These two AI platforms didn't just change my life - they <strong class="highlight">saved it</strong>.</p>
+                <div class="tool-card">
+                    <h3>VIDIQ</h3>
+                    <div class="tool-description">
+                        <p>From trap house recordings to <strong>viral content strategy</strong>. VidIQ is the secret weapon behind my growing rap career:</p>
+                        <p>✓ YouTube optimization that actually works<br>
+                        ✓ Trending topic discovery before everyone else<br>
+                        ✓ Analytics that show what content pops<br>
+                        ✓ Competitor research to stay ahead<br>
+                        ✓ SEO tools that get your content seen</p>
+                        <p><strong>This is how I'm building my fanbase while everyone else stays invisible.</strong></p>
+</div>
+                    <a href="#" class="cta-button" id="vidiq-cta">GET VIDIQ</a>
+                </div>
+
+
+                        <div class="tool-card">
+                    <h3>DISTROKID</h3>
+                    <div class="tool-description">
+                        <p>From recording in trap houses to <strong>streaming on every platform</strong>. DistroKid is how I got my music everywhere:</p>
+                        <p>✓ Upload to Spotify, Apple Music, all platforms<br>
+                        ✓ Keep 100% of your royalties<br>
+                        ✓ Instant releases, no waiting<br>
+                        ✓ YouTube Content ID for protection<br>
+                        ✓ Real-time streaming stats</p>
+                        <p><strong>This is how independent artists make it without a label.</strong></p>
+                    </div>
+                    <a href="#" class="cta-button" id="distrokid-cta">GET DISTROKID</a>
+                </div>
+                
+                <div class="tool-card">
+                    <h3>HEADSHOTPRO AI</h3>
+                    <div class="tool-description">
+                        <p>From mugshots to <strong>professional headshots</strong>. AI-powered photography that builds credibility:</p>
+                        <p>✓ Professional photos without expensive photographers<br>
+                        ✓ Multiple styles and backgrounds<br>
+                        ✓ Perfect for business profiles and social media<br>
+                        ✓ AI creates dozens of options in minutes<br>
+                        ✓ Level up your image instantly</p>
+                        <p><strong>Image is everything - this AI makes you look unstoppable.</strong></p>
+                    </div>
+                    <a href="#" class="cta-button" id="headshotpro-cta">GET HEADSHOTPRO</a>
+                </div>
+               </div>
+        </section>
+        
+        <section class="transformation">
+            <div class="before">
+                <h2 style="color: #ff0080;">BEFORE</h2>
+                <div class="transformation-text">
+                    <p><strong>Homeless & Hopeless</strong></p>
+                    <p>• Fresh out the pen</p>
+                    <p>• $0 in my pocket</p>
+                    <p>• Sleeping on couches</p>
+                    <p>• No connections, no hope</p>
+                    <p>• Same toxic cycle calling</p>
+                </div>
+            </div>
+            <div class="after">
+                <h2 style="color: #00ff00;">AFTER</h2>
+                <div class="transformation-text">
+                    <p><strong>Bands & Building</strong></p>
+                    <p>• Multiple income streams</p>
+                    <p>• AI-powered businesses</p>
+                    <p>• Growing rap career</p>
+                    <p>• Inspiring others daily</p>
+                    <p>• Breaking generational curses</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tools-section">
+            <h2 class="section-title">THE TOOLS THAT CHANGED EVERYTHING</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>SUPERHUMAN AI</h3>
+                    <div class="tool-description">
+                        <p>This ain't just another AI tool - this is your <strong>digital brain upgrade</strong>. While everyone else is manually grinding, Superhuman AI handles your:</p>
+                        <p>✓ Content creation at light speed<br>
+                        ✓ Business automation that actually works<br>
+                        ✓ Email management that saves hours daily<br>
+                        ✓ Research that would take weeks in minutes</p>
+                        <p><strong>Real talk:</strong> This tool alone replaced a whole team for me.</p>
+                    </div>
+                    <a href="#" class="cta-button" id="superhuman-cta">GET SUPERHUMAN AI</a>
+                </div>
+                
+                <div class="tool-card">
+                    <h3>SYSTEM.IO</h3>
+                    <div class="tool-description">
+                        <p>From the streets to sales funnels. System.io is the <strong>complete business engine</strong> that turned my hustle digital:</p>
+                        <p>✓ Build sales funnels that convert<br>
+                        ✓ Email marketing that actually pays<br>
+                        ✓ Course creation to monetize knowledge<br>
+                        ✓ Affiliate programs to scale income<br>
+                        ✓ All-in-one platform, no tech headaches</p>
+                        <p><strong>This is how I went from $0 to consistent bands.</strong></p>
+                    </div>
+                    <a href="#" class="cta-button" id="systemio-cta">START WITH SYSTEM.IO</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="social-proof">
+            <h2>THE STREETS DON'T LIE</h2>
+            <div class="proof-text">
+                <p>Follow my journey on Snapchat and see the receipts. From recording in trap houses to building tech stacks. From corner to corporation.</p>
+                <p><strong class="success-highlight">This ain't fake entrepreneur Instagram flexing.</strong></p>
+                <p>This is real transformation using real tools that work for real people who started with <strong class="highlight">nothing</strong>.</p>
+            </div>
+        </section>
+        
+        <section class="footer-cta">
+            <h2>DON'T STAY STUCK</h2>
+            <p>I gave you the exact blueprint. Same tools. Same strategy. Different life.</p>
+            <p><strong>The question is: You ready to change your story?</strong></p>
+            <div class="footer-buttons">
+                <a href="#" class="cta-button" id="superhuman-final">SUPERHUMAN AI</a>
+                <a href="#" class="cta-button" id="systemio-final">SYSTEM.IO</a>
+                <a href="#" class="cta-button" id="vidiq-final">VIDIQ</a>
+                <a href="#" class="cta-button" id="distrokid-final">DISTROKID</a>
+                <a href="#" class="cta-button" id="headshotpro-final">HEADSHOTPRO</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Hidden SEO Content -->
+    <div class="hidden-seo">
+        <h2>AI Success Story: From Prison to Profit</h2>
+        <p>Matchbook Kid's transformation from incarceration to AI-powered income generation using Superhuman AI and System.io affiliate marketing tools.</p>
+        
+        <h3>How AI Changed My Life After Prison</h3>
+        <p>Learn how artificial intelligence tools like Superhuman AI and System.io can create legitimate income streams for formerly incarcerated individuals.</p>
+        
+        <h3>Complete AI and Music Business Toolkit</h3>
+        <p>Superhuman AI, System.io, VidIQ, DistroKid, and HeadshotPro review from someone who built multiple income streams through AI-powered business tools and independent music distribution.</p>
+    </div>
+
+    <script>
+        // Click tracking for affiliate links
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, setting up affiliate links...');
+            
+            // Add your actual affiliate links here
+            const affiliateLinks = {
+                superhuman: 'https://www.superhuman.ai/subscribe?ref=WlbICanKqP',
+                systemio: 'https://systeme.io/?sa=sa02427192408c03eca696450793abb120466800a7',
+                vidiq: 'https://vidiq.com/Matchbookkid',
+                distrokid: 'https://distrokid.com/vip/seven/10013047',
+                headshotpro: 'https://www.headshotpro.com/?via=MBK'
+            };
+            
+            // Function to safely set href and add click tracking
+            function setupButton(id, url, toolName) {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.href = url;
+                    element.target = '_blank';
+                    element.rel = 'noopener noreferrer';
+                    
+                    // Add click tracking
+                    element.addEventListener('click', function(e) {
+                        console.log('Clicked:', toolName, 'Button:', id);
+                        
+                        // Optional: Add analytics tracking
+                        if (typeof gtag !== 'undefined') {
+                            gtag('event', 'click', {
+                                'event_category': 'affiliate',
+                                'event_label': toolName + '_' + id
+                            });
+                        }
+                    });
+                    
+                                        console.log('✅ Set up button:', id, 'for', toolName);
+                } else {
+                    console.error('❌ Button not found:', id);
+                }
+            }
+            
+            // Set up all affiliate buttons
+            setupButton('superhuman-cta', affiliateLinks.superhuman, 'Superhuman AI');
+            setupButton('superhuman-final', affiliateLinks.superhuman, 'Superhuman AI');
+            
+            setupButton('systemio-cta', affiliateLinks.systemio, 'System.io');
+            setupButton('systemio-final', affiliateLinks.systemio, 'System.io');
+            
+            setupButton('vidiq-cta', affiliateLinks.vidiq, 'VidIQ');
+            setupButton('vidiq-final', affiliateLinks.vidiq, 'VidIQ');
+            
+            setupButton('distrokid-cta', affiliateLinks.distrokid, 'DistroKid');
+            setupButton('distrokid-final', affiliateLinks.distrokid, 'DistroKid');
+            
+            setupButton('headshotpro-cta', affiliateLinks.headshotpro, 'HeadshotPro');
+            setupButton('headshotpro-final', affiliateLinks.headshotpro, 'HeadshotPro');
+            
+            console.log('🎯 All affiliate links configured!');
+            
+            // Click tracking for all CTA buttons
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Add analytics tracking here
+                    console.log('CTA clicked:', this.id);
+                    
+                    // Optional: Add conversion tracking
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'click', {
+                            'event_category': 'affiliate',
+                            'event_label': this.id
+                        });
+                    }
+                });
+            });
+
+            // Simple hover effects for buttons
+            document.querySelectorAll('.cta-button').forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+        
+        // Smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = this.getAttribute('href');
+                if (target.startsWith('#') && document.querySelector(target)) {
+                    e.preventDefault();
+                    document.querySelector(target).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Interactive tool cards
+        const toolCards = document.querySelectorAll('.tool-card');
+        toolCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 30px rgba(255,0,128,0.2)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        // Sleek loading animation
+        window.addEventListener('load', function() {
+            const loader = document.createElement('div');
+            loader.style.position = 'fixed';
+            loader.style.top = '0';
+            loader.style.left = '0';
+            loader.style.width = '100%';
+            loader.style.height = '100%';
+            loader.style.background = '#000000';
+            loader.style.display = 'flex';
+            loader.style.alignItems = 'center';
+            loader.style.justifyContent = 'center';
+            loader.style.zIndex = '9999';
+            
+            loader.innerHTML = `
+                <div style="text-align: center;">
+                    <h2 style="
+                        font-family: 'Orbitron', monospace;
+                        font-size: 2rem;
+                        color: #ff0080;
+                        margin-bottom: 20px;
+                        letter-spacing: 4px;
+                    ">LOADING</h2>
+                    <div style="
+                        width: 200px;
+                        height: 2px;
+                        background: rgba(255,255,255,0.1);
+                        position: relative;
+                        overflow: hidden;
+                    ">
+                        <div style="
+                            position: absolute;
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            height: 100%;
+                            background: linear-gradient(90deg, transparent, #ff0080, transparent);
+                            animation: load-scan 1s linear infinite;
+                        "></div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.appendChild(loader);
+            
+            // Add loading animation CSS
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes load-scan {
+                    0% { left: -100%; }
+                    100% { left: 100%; }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.transition = 'opacity 0.5s ease';
+                setTimeout(() => {
+                    loader.remove();
+                }, 500);
+            }, 1000);
+        });
+
+        // Subtle parallax effect on scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.header');
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * 0.3}px)`;
+                parallax.style.opacity = 1 - (scrolled * 0.002);
+            }
+        });
+
+        // Add subtle glow to active sections
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transition = 'all 0.6s ease';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                } else {
+                    entry.target.style.opacity = '0.8';
+                    entry.target.style.transform = 'translateY(20px)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0.8';
+            section.style.transform = 'translateY(20px)';
+            observer.observe(section);
+        });
+
+        // Clean cursor trail effect (optional - remove if too much)
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+        });
+
+        const cursor = document.createElement('div');
+        cursor.style.width = '20px';
+        cursor.style.height = '20px';
+        cursor.style.border = '2px solid #ff0080';
+        cursor.style.borderRadius = '50%';
+        cursor.style.position = 'fixed';
+        cursor.style.pointerEvents = 'none';
+        cursor.style.zIndex = '9998';
+        cursor.style.transition = 'transform 0.1s ease';
+        cursor.style.opacity = '0.5';
+        document.body.appendChild(cursor);
+
+        function animateCursor() {
+            cursorX += (mouseX - cursorX) * 0.1;
+            cursorY += (mouseY - cursorY) * 0.1;
+            
+            cursor.style.left = cursorX - 10 + 'px';
+            cursor.style.top = cursorY - 10 + 'px';
+            
+            requestAnimationFrame(animateCursor);
+        }
+
+        animateCursor();
+
+        // Hover effect for cursor
+        document.querySelectorAll('a, button, .cta-button').forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.5)';
+                cursor.style.borderColor = '#00ff00';
+            });
+            element.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+                cursor.style.borderColor = '#ff0080';
+            });
+        });
+    </script>
+
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Matchbook Kid",
+        "description": "Rapper and entrepreneur who transformed from incarceration to AI-powered success",
+        "url": "https://yoursite.com",
+        "sameAs": [
+            "https://snapchat.com/add/yourusername"
+        ],
+        "knowsAbout": [
+            "Artificial Intelligence",
+            "Affiliate Marketing",
+            "Business Automation",
+            "Personal Transformation"
+        ]
+    }
+    </script>
+</body>
+</html>
